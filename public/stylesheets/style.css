@@ -1,0 +1,87 @@
+body {
+    padding: 50px;
+    font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.contact-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-links ul li {
+    margin-bottom: 10px;
+    background: #f2f2f2;
+}
+
+.contact-links ul li a {
+    display: block;
+    padding: 10px 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-links ul li a:hover {
+    color: #fff;
+    background: #939393;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+
+.button:disabled {
+    opacity: 0.6;
+}
+
+.button:disabled:hover {
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 1
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.gray {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.buttons-section {
+    margin-top: 10px;
+    display: flex;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+

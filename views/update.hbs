@@ -1,0 +1,25 @@
+<div>
+    {{>contactsList}}
+    <div>
+        <form id="update-form" action="/update/{{current.id}}" method="post">
+            <label for="fullName"></label><input id="fullName"
+                name="fullName"
+                type="text"
+                value="{{current.fullName}}"
+                oninput="document.getElementById('delete-button').disabled = true;" />
+            <label for="phoneNumber"></label><input id="phoneNumber"
+                name="phoneNumber"
+                type="text"
+                value="{{current.phoneNumber}}"
+                oninput="document.getElementById('delete-button').disabled = true;" />
+        </form>
+
+        <div class="buttons-section">
+            <input class="button green" type="submit" form="update-form" value="Изменить" />
+            <form action="/delete/{{current.id}}" method="post">
+                <input class="button red" id="delete-button" type="submit" value="Удалить" />
+            </form>
+            {{{cancel}}}
+        </div>
+    </div>
+</div>

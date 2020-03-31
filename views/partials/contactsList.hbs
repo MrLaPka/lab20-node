@@ -1,0 +1,13 @@
+<div class="contact-links">
+    <ul>
+        {{#each contacts}}
+            <li>
+                {{#if @root.activeLinks }}
+                    <a href="/update/{{id}}">{{fullName}} {{phoneNumber}}</a>
+                {{else}}
+                    <a>{{fullName}} {{phoneNumber}}</a>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
